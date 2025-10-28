@@ -20,16 +20,13 @@ venv/
 .DS_Store
 Thumbs.db
 
-# --- Data Science Specific ---
-
-# Data files (IMPORTANT: You usually don't track large data files)
-# Be more specific if you can, e.g., data/raw/
+# Datasets
 *.csv
 *.parquet
 *.json
 data/
 
-# Model files (These are often large binaries)
+# Model files
 *.pkl
 *.pickle
 *.h5
@@ -37,7 +34,6 @@ data/
 *.pth
 
 # Secret files
-# NEVER commit secrets, API keys, or config files with passwords
 *.env
 secrets.ini
 credentials.json
