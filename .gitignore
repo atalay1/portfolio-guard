@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Conda/Virtual environments
+.venv
+env/
+venv/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Editor/IDE folders
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# --- Data Science Specific ---
+
+# Data files (IMPORTANT: You usually don't track large data files)
+# Be more specific if you can, e.g., data/raw/
+*.csv
+*.parquet
+*.json
+data/
+
+# Model files (These are often large binaries)
+*.pkl
+*.pickle
+*.h5
+*.joblib
+*.pth
+
+# Secret files
+# NEVER commit secrets, API keys, or config files with passwords
+*.env
+secrets.ini
+credentials.json
+.secrets/
+
+# Log files
+*.log
+
+# W&B local artifacts
+wandb/
