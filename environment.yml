@@ -1,0 +1,28 @@
+name: portfolio-guard
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core Python ---
+  - python=3.10
+
+  # --- Data Science Stack ---
+  - pandas
+  - scikit-learn  # Good to have for any processing
+  
+  # --- API & Web ---
+  - "wandb[fastapi]" # Installs wandb, fastapi, uvicorn
+  
+  # --- External API Tools ---
+  - requests        # For making HTTP calls to Alpha Vantage
+  - httpx           # A modern async-capable HTTP client
+  - python-dotenv   # For loading your .env file
+  
+  # --- LLM Library (Example: Google Gemini) ---
+  # Replace with 'openai' if you use that
+  - google-generativeai
+
+  # --- Development & Testing ---
+  - jupyter
+  - pytest
+  - pytest-mock     # For testing external API calls
