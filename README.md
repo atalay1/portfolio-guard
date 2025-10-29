@@ -72,9 +72,8 @@ http://localhost:8000/docs
 From here, you can test the /analyze endpoint directly in your browser.
 
 
-Example Screenshot
-
-**
+![FastAPI Docs](docs/portfolio_guard_api.png)
+![W&B Dashboard](docs/portfolio_guard_wb.png)
 
 📈 MLOps & Experiment Tracking
 
