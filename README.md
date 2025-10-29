@@ -1,4 +1,4 @@
-🤖 AI Portfolio Analyzer
+🤖 AI Portfolio Guard
 
 A production-ready API that analyzes stock portfolios using real-time financial data and generative AI, complete with MLOps tracking and containerization.
 
@@ -43,7 +43,7 @@ cp .env.example .env
 
 Edit the .env file and add your secret keys.
 
-ALPHA_VANTAGE_KEY="your_key_here"
+ALPHA_VANTAGE_API_KEY="your_key_here"
 GEMINI_API_KEY="your_key_here"
 WANDB_API_KEY="your_key_here"
 
@@ -64,12 +64,9 @@ docker run -p 8000:8000 \
   --name portfolio-api \
   -d portfolio-analyzer
 
-
-(Note: --env-file ./.env is a clean way to pass all your keys at once instead of multiple -e flags.)
-
 🔬 How to Use the API
 
-The API is now running on your machine. You can access the interactive documentation (powered by FastAPI) by going to:
+The API is now running on your machine at:
 
 http://localhost:8000/docs
 
