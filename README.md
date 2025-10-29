@@ -16,6 +16,8 @@ Returns the AI-generated analysis to the user as a JSON response.
 
 The entire application is containerized with Docker for complete reproducibility and is ready for cloud deployment.
 
+Next steps: Use news from Alpha Vantage API to make more informed comments on the portfolio.
+
 🚀 How to Run Locally
 
 This project is built with Docker and can be run in two simple commands.
