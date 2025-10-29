@@ -27,42 +27,41 @@ Docker Desktop installed and running.
 Git installed.
 
 1. Clone the Repository
-
+```
 git clone [https://github.com/atalay1/my_portfolio_analyzer.git](https://github.com/atalay1/my_portfolio_analyzer.git)
 cd my_portfolio_analyzer
-
+```
 
 2. Create Your Secret Keys (.env file)
 
-This project requires three API keys.
-
-Copy the example file:
-
+This project requires three API keys, copy the example file:
+```
 cp .env.example .env
-
+```
 
 Edit the .env file and add your secret keys.
-
+```
 ALPHA_VANTAGE_API_KEY="your_key_here"
 GEMINI_API_KEY="your_key_here"
 WANDB_API_KEY="your_key_here"
-
+```
 
 3. Build the Docker Image
 
 This command builds the container, installing all dependencies from the Dockerfile.
-
+```
 docker build -t portfolio-analyzer .
-
+```
 
 4. Run the Container
 
 This command runs the container and securely passes in your secret keys from the .env file.
-
+```
 docker run -p 8000:8000 \
   --env-file ./.env \
   --name portfolio-api \
   -d portfolio-analyzer
+```
 
 🔬 How to Use the API
 
@@ -71,16 +70,6 @@ The API is now running on your machine at:
 http://localhost:8000/docs
 
 From here, you can test the /analyze endpoint directly in your browser.
-
-API Endpoint: /analyze
-
-Method: POST
-
-Body (JSON):
-
-{
-  "tickers": ["IBM", "MSFT",DOCKER_IMAGE_NAME="portfolio-analyzer" "GOOG"]
-}
 
 
 Example Screenshot
@@ -96,5 +85,3 @@ This allows us to monitor and debug our LLM prompts and responses in real-time. 
 Example W&B Dashboard
 
 **
-
-Live Project Link: [Link to your public W&B project]
