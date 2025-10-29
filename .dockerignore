@@ -1,0 +1,23 @@
+# Ignore the Git repository
+.git/
+.gitignore
+
+# Ignore this file
+.dockerignore
+
+# Ignore the Conda environment on your local machine
+.venv/
+env/
+
+# Ignore Python cache
+__pycache__/
+
+# Ignore Jupyter notebooks (not part of the production app)
+notebooks/
+
+# CRITICAL: Ignore all secret files
+*.env
+*.env.example
+
+# Ignore local W&B logs
+wandb/
