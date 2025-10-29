@@ -4,25 +4,23 @@ channels:
   - defaults
 dependencies:
   # --- Core Python ---
-  - python=3.10
-
+  - python=3.12
+  - pip
   # --- Data Science Stack ---
   - pandas
-  - scikit-learn  # Good to have for any processing
+  - scikit-learn
+  - xgboost
   
-  # --- API & Web ---
-  - "wandb[fastapi]" # Installs wandb, fastapi, uvicorn
-  
-  # --- External API Tools ---
-  - requests        # For making HTTP calls to Alpha Vantage
-  - httpx           # A modern async-capable HTTP client
-  - python-dotenv   # For loading your .env file
-  
-  # --- LLM Library (Example: Google Gemini) ---
-  # Replace with 'openai' if you use that
-  - google-generativeai
-
-  # --- Development & Testing ---
+  # --- Notebook & Development ---
   - jupyter
-  - pytest
-  - pytest-mock     # For testing external API calls
+  
+  # --- Pip-installed Packages ---
+  # Conda will manage the pip installation
+  - pip:
+    - wandb
+    - fastapi
+    - uvicorn
+    - google-generativeai
+    - python-dotenv
+    - alpha-vantage
+    - requests
