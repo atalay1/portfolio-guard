@@ -71,9 +71,10 @@ http://localhost:8000/docs
 
 From here, you can test the /analyze endpoint directly in your browser.
 
+FastAPI Screen
 
 ![FastAPI Docs](docs/portfolio_guard_api.png)
-![W&B Dashboard](docs/portfolio_guard_wb.png)
+
 
 📈 MLOps & Experiment Tracking
 
@@ -83,4 +84,4 @@ This allows us to monitor and debug our LLM prompts and responses in real-time. 
 
 Example W&B Dashboard
 
-**
+![W&B Dashboard](docs/portfolio_guard_wb.png)
